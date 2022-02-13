@@ -1,0 +1,105 @@
+:root{
+    --vermelho: red;
+    --preto: black;
+    --branco: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+header .container{
+    background-color: var(--preto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex; /*forma como os elementos serao alinhados */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+header .container h1{
+    color: var(--vermelho);
+    font-size: 280%;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+}
+
+header a:hover{
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+}
+
+/* classe filme principal */
+
+.filme-principal{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url("../img/breaking-bad.jpg");
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    margin-left: 5%;
+    width: 45%;
+}
+
+.filme-principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+.filme-principal .titulo{
+    font-size: 50px;
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    font-weight: bold;
+    color: var(--branco);
+    padding: 15px 25px;
+    margin-right: 15px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.7s ease all;
+}
+
+.filme-principal .botao:hover{
+    background-color: var(--branco);
+    font-weight: bold;
+    color: var(--preto);
+    padding: 15px 25px;
+    margin-right: 15px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filme-principal .botao i{
+    margin-right: 7px;
+}
+
+/* carrosel */
+.img-preview{
+    height: 100%;
+    width: 100%;
+    display: block;
+}

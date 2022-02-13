@@ -1,0 +1,30 @@
+@media screen and (max-width: 1034px){
+    .filme-principal .container{
+        width: 70%;
+    }
+
+    header .container{
+        display: flex; /*forma como os elementos serao alinhados */
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 665px){
+
+    .filme-principal .titulo{
+        font-size: 30px;
+    }
+
+    .filme-principal .container{
+        width: 90%;
+    }
+
+    .filme-principal .botao{
+        padding: 5px 15px;
+        margin-right: 5px;
+        border: none;
+        font-size: 10px;
+    }
+    
+
+}
